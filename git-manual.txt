@@ -70,13 +70,13 @@ git branch -r
 
 git branch --list
 
-git config remote.stratus.fetch +refs/heads/*:refs/remotes/stratus/*
+git config remote.sample.fetch +refs/heads/*:refs/remotes/sample/*
 
 ==============================================================
-根据stratus 的beta-release建立本地的分支
+根据sample 的beta-release建立本地的分支
 
-git config remote.stratus.url git@github.com:stratustech/spc-ui-implementation.git
-git config remote.stratus.fetch +refs/heads/*:refs/remotes/stratus/*
+git config remote.sample.url git@github.com:sampletech/spc-ui-implementation.git
+git config remote.sample.fetch +refs/heads/*:refs/remotes/sample/*
 
 
 
@@ -84,7 +84,7 @@ git config remote.origin.url git@github.com:wuzhenyujimmy/jimmy-platform.git
 git config remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
 
 
-git pull stratus
+git pull sample
 
 git checkout beta-relase
 git checkout -b TK-02642-SC499
